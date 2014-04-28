@@ -1,0 +1,96 @@
+html {
+	background-color: black;
+}
+
+.number1 {
+	font-size: 300px;
+	color: rgba(255,0,0,0.7);
+	font-family: Changa One;
+}
+
+.number2 {
+	font-size: 300px;
+	color: rgba(0,255,0, 0.7);
+	font-family: Changa One;
+}
+
+.front {
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	background-color: rgba(0,0,0, 0.7);
+	font-family: Sorts Mill Goudy;
+	text-align: center;
+	font-variant: small-caps;
+	font-size: 80px;
+	color: rgba(0,255,0, 0.7);
+	font-weight:900;
+/*	transform:rotate(-15deg);
+	-ms-transform:rotate(-15deg);  IE 9 
+	-webkit-transform:rotate(-15deg); /* Opera, Chrome, and Safari */
+	-webkit-animation: bounceIn 1s;
+}
+.player1score {
+	float: left;
+	font-variant: bold;
+	font-family: Sorts Mill Goudy;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(255,0,0,0.7);
+
+}
+
+.player2score {
+	float: right;
+	font-variant: bold;
+	font-family: Sorts Mill Goudy;
+	font-size: 40px;
+	text-align: center;
+	color: rgba(0,255,0, 0.7);
+	margin-right: 50px;
+}
+
+.title {
+	font-family: Sorts Mill Goudy;
+	font-size: 70px;
+	color:black;
+	margin: 0;
+}
+
+.art {
+	float: center;
+	margin: 0 auto;
+}
+
+.container {
+	width:500px;
+	margin: 0 auto;
+	float: center;
+}
+
+.board {
+	height: 100px;
+	width: 100px;
+	background-color: rgba(0,10,0,0);
+	float: left;
+	color: white;
+	border-radius: 20px;
+	margin: 15px;
+	-webkit-box-shadow:0 0 20px grey; 
+	-moz-box-shadow: 0 0 20px grey; 
+	box-shadow:0 0 20px grey;
+}
+
+.board:hover{
+	background-color: rgba(255,255,255,0.5);
+	transition: 0.6s;
+	border:4px solid rgba(255,0,0,);
+}
+
+.player1 {
+	background-color: rgba(255,0,0,0.7);
+}
+
+.player2 {
+	background-color: rgba(0,255,0, 0.7);
+}

@@ -1,0 +1,38 @@
+<html x-ng-app="gameApp">
+<head>
+	<title>T|T|T</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Nova+Flat' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Changa+One' rel='stylesheet' type='text/css'>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
+
+	<script src="script.js"></script>
+</head>
+
+<body x-ng-controller="GameController">
+	<p  x-ng-if="game.gameOver" x-ng-class="{'front': game.gameOver}">{{game.result}} 
+
+		<button x-ng-if="game.gameOver" style="background-color: rgba(0,0,0,0); font-family: Rock Salt; color:red; font-size:50px" x-ng-click="playAgain();">PLAY AGAIN?</button>
+
+	</p>
+
+<div class ="player1score"> Red Score<div class="number1">{{game.player1}}</div></div>
+<div class ="player2score">Green Score<div class="number2">{{game.player2}}</div></div>
+
+<div class="art">
+	<div class="container">
+
+		<div class="board" x-ng-repeat="x in game.cells track by $index"
+		x-ng-click="playerTurn($index);" x-ng-class="{'player1':game.cells[$index] == 1, 'player2':game.cells[$index] == -1}">
+		</div>
+
+	</div>
+</div>
+
+</body>
+</html>
